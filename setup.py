@@ -5,7 +5,8 @@ setup(
     version='0.0.1',
     packages=find_packages(),
     install_requires=[
-        # 列出你的依赖项，例如 'requests', 'numpy' 等
+        'numpy',
+        'open3d',
     ],
     author='PMY',
     author_email='863102089@qq.com',
@@ -18,4 +19,19 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
+    python_requires='>=3.6',
+    # 添加项目页面和bug跟踪链接
+    project_urls={
+        'Bug Reports': 'https://github.com/mingyangpeng/pmyutils/issues',
+        'Source': 'https://github.com/mingyangpeng/pmyutils',
+    },
+    # Note: To publish this package to PyPI, run:
+    # python setup.py sdist bdist_wheel
+    # twine upload dist/*
+    
+    # When updating code, follow these steps:
+    # 1. Update version number above (e.g., from '0.0.1' to '0.0.2')
+    # 2. Clean previous builds: rm -rf dist/ build/ *.egg-info/
+    # 3. Build package: python setup.py sdist bdist_wheel
+    # 4. Upload to PyPI: twine upload dist/*
 )
